@@ -1,1 +1,1 @@
-https://fantazjum.github.io/Projektowanie-Interfejsow-Webowych/
+https://fantazjum.github.io/Programowanie-Interfejsow-Webowych/
