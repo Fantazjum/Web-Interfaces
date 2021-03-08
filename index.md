@@ -1,5 +1,5 @@
 /*
-title: Programowanie Interfejsow Webowych Lab
+Title: Programowanie Interfejsow Webowych Lab
 */
 # Poszczególne elementy laboratoriów
 **1. Lab1**
