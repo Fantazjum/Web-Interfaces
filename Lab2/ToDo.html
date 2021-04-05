@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
 	<link rel="stylesheet" href="https://bootswatch.com/4/solar/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	<script src="skrypt.js"></script>
   </head>
   <body>
@@ -44,4 +45,12 @@
 	<button id="restore" class="btn btn-success disabled" 
 		style="position: absolute; right: 0; bottom: 0;">Przywróć element</button>
   </body>
+<div id="modal" role="dialog" class="alert alert-dismissible alert-warning" 
+	style="text-align: center; display: none;" data-backdrop="false">
+<h4 class="alert-heading">Uwaga!</h4>
+<p class="mb-0">Wybrany element zostanie usunięty!<br>
+Możliwe jest przywrócenie <span style="text-decoration: underline">
+	<b>tylko</b></span> jednego elementu listy wstecz!</p><br>
+<button id="delete" class="btn btn-danger" data-dismiss="modal">Potwierdź</button>  
+<button id="cancel" class="btn btn-danger" data-dismiss="modal">Anuluj</button></div>
 </html>
