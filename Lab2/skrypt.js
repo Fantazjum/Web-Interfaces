@@ -16,6 +16,21 @@ let eduHide = true;
 let workHide = true;
 let everydayHide = true;
 let bin = null;
+let deleted;
+
+$("#modal").modal('hide');
+
+$("#delete").click(function() {
+	$("#modal").modal('hide');
+	bin = deleted.contents()[0].nodeValue + deleted.parent().attr("id")[1];
+	deleted.remove();
+	$("#restore").removeClass("btn btn-success disabled");
+	$("#restore").addClass("btn btn-success");
+});
+
+$("#cancel").click(function() {
+	$("#modal").modal('hide');
+});
 
 addButton.addEventListener("click", (event) => {
 	if(newTask.value === "") return;
@@ -23,10 +38,8 @@ addButton.addEventListener("click", (event) => {
 	let $deletion = $("<button></button>").text("X");
 	$deletion.addClass("btn btn-warning");
 	$deletion.click(function(){
-		bin = $(this).parent().contents()[0].nodeValue + $(this).parent().parent().attr("id")[1];
-		$(this).parent().remove();
-		$("#restore").removeClass("btn btn-success disabled");
-		$("#restore").addClass("btn btn-success");
+		deleted = $(this).parent()
+		$("#modal").modal('show');
 	});
 	task.appendChild(document.createTextNode(newTask.value));
 	$deletion.appendTo(task);
@@ -48,10 +61,8 @@ $("#restore").click(function(){
 	let $deletion = $("<button></button>").text("X");
 	$deletion.addClass("btn btn-warning");
 	$deletion.click(function(){
-		bin = $(this).parent().contents()[0].nodeValue + $(this).parent().parent().attr("id")[1];
-		$(this).parent().remove();
-		$("#restore").removeClass("btn btn-success disabled");
-		$("#restore").addClass("btn btn-success");
+		deleted = $(this).parent()
+		$("#modal").modal('show');
 	});
 	restored.append(document.createTextNode(bin.slice(0,-1)));
 	$deletion.appendTo(restored);
