@@ -38,7 +38,7 @@ addButton.addEventListener("click", (event) => {
 	let $deletion = $("<button></button>").text("X");
 	$deletion.addClass("btn btn-warning");
 	$deletion.click(function(){
-		deleted = $(this).parent()
+		deleted = $(this).parent();
 		$("#modal").modal('show');
 	});
 	task.appendChild(document.createTextNode(newTask.value));
@@ -61,7 +61,7 @@ $("#restore").click(function(){
 	let $deletion = $("<button></button>").text("X");
 	$deletion.addClass("btn btn-warning");
 	$deletion.click(function(){
-		deleted = $(this).parent()
+		deleted = $(this).parent();
 		$("#modal").modal('show');
 	});
 	restored.append(document.createTextNode(bin.slice(0,-1)));
