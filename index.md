@@ -9,3 +9,7 @@
 ---
 **2. Lab2**
   * [ToDo task management site](https://fantazjum.github.io/Programowanie-Interfejsow-Webowych/Lab2/ToDo.html)
+
+---
+**3. Lab3**
+  * [Tinder dla projektów](https://fantazjum.github.io/Programowanie-Interfejsow-Webowych/Lab3/Projektr.html)
