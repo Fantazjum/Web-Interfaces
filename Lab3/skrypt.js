@@ -10,7 +10,7 @@ const Tag = (props) => {
 const ListIt = (props) => {
 	const { img, user, mail, description, tags} = props;
 	return (<li key={user}>
-		<picture style={{float: left, width: 100 + 'px', height: 100 + 'px'}}>
+		<picture style={{float: 'left', width: 100 + 'px', height: 100 + 'px'}}>
 			<source srcset={img} />
 			<img src="Def.png" />
 		</picture>
