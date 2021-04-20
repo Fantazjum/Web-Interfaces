@@ -11,7 +11,7 @@ const ListIt = (props) => {
 	const { img, user, mail, description, tags} = props;
 	return (<li key={user}>
 		<div style={{width: 110 + 'px'}}>
-		<img src={img} onerror={this.src="Def.png"} />
+		<img src={img} style={{backgroundImage: "Def.png"}} />
 		</div>
 		<h2>{user}</h2>
 		<a href="#">{mail}</a>
