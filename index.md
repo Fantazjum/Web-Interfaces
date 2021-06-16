@@ -19,5 +19,5 @@
  * [Adaptacja powyższej aplikacji w React-App](https://fantazjum.github.io/this_is_ridiculous/)
 
 ---
-**5. Lab6**
+**5. LabFin~**
  * [Lab 6,7](https://fantazjum.github.io/PizzaTime/)
