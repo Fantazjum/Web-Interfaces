@@ -13,7 +13,7 @@
 ---
 **3. Lab3**
   * [Tinder for projects](https://fantazjum.github.io/Programowanie-Interfejsow-Webowych/Lab3/Projektr.html)
-  * 
+
 ---
-**5. LabFinal**
+**4. LabFinal**
  * [React Page](https://fantazjum.github.io/PizzaTime/)
