@@ -1,5 +1,5 @@
 
-# Poszczególne elementy laboratoriów
+# Respective laboratories tasks
 ---
 **1. Lab1**
   * [Lorem](https://fantazjum.github.io/Programowanie-Interfejsow-Webowych/Lab1/Lorem.html)
