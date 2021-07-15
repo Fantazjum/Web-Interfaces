@@ -1,2 +1,1 @@
-~~Lab4~~ [Lab5](https://fantazjum.github.io/React/)
-Trochę się już gubię, ngl
+[Address of pages using GitHub Pages](https://fantazjum.github.io/Programowanie-Interfejsow-Webowych/)
