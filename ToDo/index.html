@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <title>To-do list</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://bootswatch.com/4/solar/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="skrypt.js"></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <h1>Welcome to the page that lets you list things to do!</h1>
+  <div class="forms">
+    <form>
+      <h3>Input a task to complete:</h3>
+      <div class="task-input">
+        <input id="task" name="zadanie" type="text">
+        <button class="btn btn-primary" id="sendButton" type="button">Add</button>
+      </div>
+      <div class="task-toggle">
+        <input id="education" name="lista" type="radio" value="education" checked="checked">
+        <label for="education">Education</label>
+        <input id="work" name="lista" type="radio" value="work">
+        <label for="work">Work</label>
+        <input id="everyday" name="lista" type="radio" value="everyday">
+        <label for="everyday">Daily life</label>
+      </div>
+    </form>
+    <div class="search">
+      <label for="search">Dynamic search: </label>
+      <input id="search" name="search" type="text">
+      <div class="case-checkbox">
+        <input id="caseSensitive" name="caseSensitive" type="checkbox">
+        <label for="caseSensitive">case sensitive</label>
+      </div>
+    </div>
+  </div>
+  <div class="lists">
+    <div class="list">
+      <h4 id="educationHead">Education</h4>
+      <ul id="educationList"></ul>
+    </div>
+    <div class="list">
+      <h4 id="workHead">Work</h4>
+      <ul id="workList"></ul>
+    </div>
+    <div class="list">
+      <h4 id="everydayHead">Daily Life</h4>
+      <ul id="everydayList"></ul>
+    </div><br>
+  </div>
+  <button id="restore" class="btn btn-success disabled">
+    Restore element
+  </button>
+</body>
+<div id="modal" role="dialog" class="alert alert-dismissible alert-warning" data-backdrop="true">
+  <div class="modal-content">
+    <h4 class="alert-heading">Warning!</h4>
+    <p class="mb-0">
+      Chosen element will be deleted!<br>
+      You can only restore <span class="stress">only</span> one element of the list!
+    </p>
+    <div class="modal-buttons">
+      <button id="delete" class="btn btn-danger" data-dismiss="modal">Confirm</button>
+      <button id="cancel" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+    </div>
+  </div>
+</div>
+
+</html>

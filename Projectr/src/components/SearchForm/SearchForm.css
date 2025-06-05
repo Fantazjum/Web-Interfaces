@@ -1,0 +1,13 @@
+.search-form {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    row-gap: 0.25rem;
+    column-gap: 0.75rem;
+    float: left;
+}
+
+.search-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}

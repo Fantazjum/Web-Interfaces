@@ -1,0 +1,58 @@
+li.item {
+    padding: 1rem 0.5rem;
+    margin: 5px;
+    border: 2px solid olive;
+    border-radius: 4px;
+    overflow: 'hidden';
+    width: 100%;
+    max-width: 50rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.email {
+    text-decoration: underline;
+    color: blue;
+}
+
+.description {
+    padding-left: 0.5rem;
+    margin-top: 0.25rem;
+}
+
+.picture {
+    width: 7rem;
+
+    >img {
+        width: 7rem;
+    }
+}
+
+.person-box {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.contact-data {
+    display: flex;
+    flex-direction: column;
+
+    >h2 {
+        margin-top: 0.5rem;
+        margin-bottom: 0.25rem;
+    }
+}
+
+.tag {
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    border: 2px solid orange;
+    background-color: burlywood;
+}
+
+.tags {
+    padding-left: 0.5rem;
+    display: flex;
+    gap: 0.35rem;
+    flex-wrap: wrap;
+}

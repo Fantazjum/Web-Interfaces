@@ -1,0 +1,27 @@
+.new-person-form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    float: left;
+    column-gap: 0.75rem;
+    row-gap: 0.25rem;
+}
+
+.primary-button {
+    grid-column: 2;
+    margin-left: min(100%, calc(30rem + 6px));
+    transform: translateX(-100%);
+    background-color: #DFA73E;
+    border: 2px solid #CFA72E;
+    border-radius: .5rem;
+    color: #FFF;
+    display: inline-block;
+    font-size: 1.5em;
+    width: 5rem;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #EFB75E;
+        color: #DDD;
+    }
+}

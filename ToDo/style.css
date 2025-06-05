@@ -1,0 +1,151 @@
+span.stress {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+label {
+    cursor: pointer;
+    margin-left: 0.5rem;
+    margin-bottom: 0.25rem;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 1.5rem;
+}
+
+.forms {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+#educationHead.hidden,
+#workHead.hidden,
+#everydayHead.hidden {
+    color: darkgrey;
+}
+
+.search {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.case-checkbox {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 50rem;
+    width: 75%;
+    grid-column: 2;
+}
+
+input[type=text] {
+    border-radius: 0.25rem;
+    max-width: 50rem;
+    width: 75%;
+}
+
+input {
+    margin-left: 0.5rem;
+}
+
+input:first-child {
+    margin-left: 0;
+}
+
+.btn:not(.btn-success) {
+    padding: 0.125rem 0.625rem;
+
+    &.btn-warning {
+        line-height: 0.75;
+        padding: 0.3rem 0.35rem;
+        margin-left: 2.5rem;
+    }
+}
+
+#restore {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+#modal {
+    margin: 0 6rem;
+    text-align: center;
+    display: none;
+    z-index: 1050;
+    width: max-content;
+    padding: 1.75rem 5.5rem;
+    left: 50%;
+    transform: translateX(-70%) translateY(-50%);
+    top: 50%;
+    position: fixed;
+}
+
+#educationHead,
+#workHead,
+#everydayHead {
+    cursor: pointer;
+}
+
+.modal-content {
+    display: flex;
+    background: transparent;
+    flex-direction: column;
+    border: none;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.modal-buttons {
+    display: flex;
+    gap: 3rem;
+}
+
+.modal-backdrop {
+    opacity: 0.2;
+}
+
+h1,
+h3 {
+    color: beige;
+}
+
+.lists {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    h4 {
+        color: pink;
+    }
+
+    >div.list {
+        ul {
+            list-style-type: none;
+            color: orange;
+
+            li {
+                width: max-content;
+
+                &.done {
+                    :first-child {
+                        text-decoration: line-through;
+                        color: grey;
+                    }
+
+                    span {
+                        color: gold;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.task-input {
+    display: flex;
+    gap: 0.25rem;
+    margin-bottom: 0.25rem;
+}
